@@ -26,6 +26,8 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<!-- Themify Icons -->
     <link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Jquery Ui -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
 	<!-- Nice Select CSS -->
     <link rel="stylesheet" href="css/niceselect.css">
 	<!-- Animate CSS -->
@@ -42,7 +44,7 @@
 	<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-
+	
 	
 </head>
 <body class="js">
@@ -80,8 +82,8 @@
 								<ul class="list-main">
 									<li><i class="ti-location-pin"></i> Store location</li>
 									<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
-									<li><i class="ti-user"></i> <a href="#">My account</a></li>
-									<li><i class="ti-power-off"></i><a href="login.html#">Login</a></li>
+									<li><i class="ti-user"></i> <a href="myaccount.html">My account</a></li>
+									<li><i class="ti-power-off"></i><a href="login.html">Login</a></li>
 								</ul>
 							</div>
 							<!-- End Top Right -->
@@ -96,7 +98,8 @@
 						<div class="col-lg-2 col-md-2 col-12">
 							<!-- Logo -->
 							<div class="logo">
-								<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+								<a href="index.html"> <img src="images/logo.png" alt="logo"
+									style="max-width: 100px; margin-top: -25px;" /></a>
 							</div>
 							<!--/ End Logo -->
 							<!-- Search Form -->
@@ -119,9 +122,9 @@
 								<div class="search-bar">
 									<select>
 										<option selected="selected">All Category</option>
-										<option>watch</option>
-										<option>mobile</option>
-										<option>kid’s item</option>
+										<option>Bd Medicine</option>
+									<option>Imported Medicine</option>
+									<option>First AID</option>
 									</select>
 									<form>
 										<input name="search" placeholder="Search Products Here....." type="search">
@@ -149,22 +152,26 @@
 										</div>
 										<ul class="shopping-list">
 											<li>
-												<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-												<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-												<h4><a href="#">Woman Ring</a></h4>
-												<p class="quantity">1x - <span class="amount">$99.00</span></p>
+												<a href="#" class="remove" title="Remove this item"><i
+														class="fa fa-remove"></i></a>
+												<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70"
+														alt="#"></a>
+												<h4><a href="#">Napa</a></h4>
+												<p class="quantity">1x - <span class="amount">BDT-21.00</span></p>
 											</li>
 											<li>
-												<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-												<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-												<h4><a href="#">Woman Necklace</a></h4>
-												<p class="quantity">1x - <span class="amount">$35.00</span></p>
+												<a href="#" class="remove" title="Remove this item"><i
+														class="fa fa-remove"></i></a>
+												<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70"
+														alt="#"></a>
+												<h4><a href="#">Napa Extra</a></h4>
+												<p class="quantity">1x - <span class="amount">BDT-22.00</span></p>
 											</li>
 										</ul>
 										<div class="bottom">
 											<div class="total">
 												<span>Total</span>
-												<span class="total-amount">$134.00</span>
+												<span class="total-amount">BDT-2134.00</span>
 											</div>
 											<a href="checkout.html" class="btn animate">Checkout</a>
 										</div>
@@ -188,18 +195,17 @@
 										<div class="navbar-collapse">	
 											<div class="nav-inner">	
 												<ul class="nav main-menu menu navbar-nav">
-													<li class="active"><a href="#">Home</a></li>
-													<li><a href="#">Product</a></li>												
-													<li><a href="#">Service</a></li>
-													<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
+													<li ><a href="index.html">Home</a></li>
+													<li ><a  href="product.html">Product</a></li>										
+													<li class="active"><a >Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 														<ul class="dropdown">
-															<li><a href="shop-grid.html">Shop Grid</a></li>
+															<li class="active"><a href="shop-grid.html">Shop Grid</a></li>
 															<li><a href="cart.html">Cart</a></li>
 															<li><a href="checkout.html">Checkout</a></li>
 														</ul>
 													</li>
-													<li><a href="#">Pages</a></li>									
-													<li><a href="#">Blog<i class="ti-angle-down"></i></a>
+												 									
+													<li><a href="blog.html">Blog<i class="ti-angle-down"></i></a>
 														<ul class="dropdown">
 															<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
 														</ul>
@@ -227,8 +233,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="blog-single.html">Cart</a></li>
+							<li><a href="index.html">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="cart.html">Cart</a></li>
 						</ul>
 					</div>
 				</div>
@@ -256,12 +262,12 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="image" data-title="No"><img src="images/cart.jpg" alt="#"></td>
 								<td class="product-des" data-title="Description">
-									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-name"><a href="#">Medicine-1</a></p>
 									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
 								</td>
-								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="price" data-title="Price"><span>BDT-110.00 </span></td>
 								<td class="qty" data-title="Qty"><!-- Input Order -->
 									<div class="input-group">
 										<div class="button minus">
@@ -278,16 +284,16 @@
 									</div>
 									<!--/ End Input Order -->
 								</td>
-								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="total-amount" data-title="Total"><span>BDT-220.88</span></td>
 								<td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
 							</tr>
 							<tr>
-								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="image" data-title="No"><img src="images/cart.jpg" alt="#"></td>
 								<td class="product-des" data-title="Description">
-									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-name"><a href="#">Medicine-2</a></p>
 									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
 								</td>
-								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="price" data-title="Price"><span>BDT-110.00 </span></td>
 								<td class="qty" data-title="Qty"><!-- Input Order -->
 									<div class="input-group">
 										<div class="button minus">
@@ -304,16 +310,16 @@
 									</div>
 									<!--/ End Input Order -->
 								</td>
-								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="total-amount" data-title="Total"><span>BDT-220.88</span></td>
 								<td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
 							</tr>
 							<tr>
-								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="image" data-title="No"><img src="images/cart.jpg" alt="#"></td>
 								<td class="product-des" data-title="Description">
-									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-name"><a href="#">Medicine-3</a></p>
 									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
 								</td>
-								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="price" data-title="Price"><span>BDT-110.00 </span></td>
 								<td class="qty" data-title="Qty"><!-- Input Order -->
 									<div class="input-group">
 										<div class="button minus">
@@ -330,7 +336,7 @@
 									</div>
 									<!--/ End Input Order -->
 								</td>
-								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="total-amount" data-title="Total"><span>BDT-220.88</span></td>
 								<td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
 							</tr>
 						</tbody>
@@ -352,17 +358,17 @@
 										</form>
 									</div>
 									<div class="checkbox">
-										<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Shipping (+10$)</label>
+										<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Shipping (+10 BDT)</label>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-7 col-12">
 								<div class="right">
 									<ul>
-										<li>Cart Subtotal<span>$330.00</span></li>
+										<li>Cart Subtotal<span>BDT-330.00</span></li>
 										<li>Shipping<span>Free</span></li>
-										<li>You Save<span>$20.00</span></li>
-										<li class="last">You Pay<span>$310.00</span></li>
+										<li>You Save<span>BDT-20.00</span></li>
+										<li class="last">You Pay<span>BDT-310.00</span></li>
 									</ul>
 									<div class="button5">
 										<a href="#" class="btn">Checkout</a>
@@ -388,7 +394,7 @@
 					<div class="single-service">
 						<i class="ti-rocket"></i>
 						<h4>Free shiping</h4>
-						<p>Orders over $100</p>
+						<p>Orders over BDT-100</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -496,7 +502,7 @@
                                             <span><i class="fa fa-check-circle-o"></i> in stock</span>
                                         </div>
                                     </div>
-                                    <h3>$29.00</h3>
+                                    <h3>BDT-29.00</h3>
                                     <div class="quickview-peragraph">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam.</p>
                                     </div>

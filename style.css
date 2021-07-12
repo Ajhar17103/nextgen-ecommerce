@@ -208,7 +208,7 @@ Version:1.0
     width: 40px;
     line-height: 40px;
 	background:transparent;
-    background:#222;
+    background:rgb(2, 129, 70);
     border-radius: 0;
 	font-size: 18px;
 	-webkit-transition: all 500ms ease;
@@ -4844,6 +4844,8 @@ Version:1.0
 ===============================*/
 .footer{
 	background:#222;
+	
+	
 }
 .footer .about {
 	padding-right: 50px;
@@ -4944,3 +4946,5 @@ Version:1.0
 /*=============================
 	End Footer CSS
 ===============================*/
+
+
