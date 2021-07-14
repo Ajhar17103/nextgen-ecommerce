@@ -125,6 +125,7 @@
 							<div class="search-bar">
 								<select>
 									<option selected="selected">All Category</option>
+									<option>By Alphabet (A-Z) </option>
 									<option>Bd Medicine</option>
 									<option>Imported Medicine</option>
 									<option>First AID</option>
@@ -147,7 +148,7 @@
 										aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar shopping">
-								<a href="#" class="single-icon"><i class="ti-bag"></i> <span
+								<a href="cart.html" class="single-icon"><i class="ti-bag"></i> <span
 										class="total-count">2</span></a>
 								<!-- Shopping Item -->
 								<div class="shopping-item">
@@ -159,16 +160,14 @@
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i
 													class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70"
-													alt="#"></a>
+											<a class="cart-img" href="#"><img src="images/cart.jpg" alt="#"></a>
 											<h4><a href="#">Napa</a></h4>
 											<p class="quantity">1x - <span class="amount">BDT-21.00</span></p>
 										</li>
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i
 													class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70"
-													alt="#"></a>
+											<a class="cart-img" href="#"><img src="images/cart.jpg" alt="#"></a>
 											<h4><a href="#">Napa Extra</a></h4>
 											<p class="quantity">1x - <span class="amount">BDT-22.00</span></p>
 										</li>
@@ -324,12 +323,12 @@
 											<ul class="nav main-menu menu navbar-nav">
 												<li class="active"><a href="index.html">Home</a></li>
 												<li><a href="product.html">Product</a></li>
-											
+
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span
 															class="new">New</span></a>
 													<ul class="dropdown">
 														<li><a href="shop-grid.html">Shop Grid</a></li>
-														<li><a href="cart.html">Cart</a></li>
+														<li><a onclick="cardfunc()">Cart</a></li>
 														<li><a href="checkout.html">Checkout</a></li>
 													</ul>
 												</li>
@@ -365,7 +364,7 @@
 					<div class="col-lg-9 offset-lg-3 col-12">
 						<div class="text-inner">
 							<div class="row">
-								<div class="col-lg-7 col-12">
+								<div class="col-lg-8 col-12">
 									<div class="hero-text">
 										<h1><span>Order Online </span>Save Time,Save Money</h1>
 										<p>Maboriosam in a nesciung eget magnae <br> dapibus disting tloctio in the find
@@ -458,10 +457,10 @@
 										role="tab">Surgical</a></li>
 								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#personalcare"
 										role="tab">Personal Care</a></li>
-										<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#herbal"
-											role="tab">Herbal</a></li>
-											<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#others"
-												role="tab">Other's</a></li>
+								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#herbal"
+										role="tab">Herbal</a></li>
+								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#others"
+										role="tab">Other's</a></li>
 							</ul>
 							<!--/ End Tab Nav -->
 						</div>
@@ -474,10 +473,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product.jpg" alt="#">
-														<img class="hover-img" src="images/product/product.jpg"
+														<img class="default-img" src="images/product/product.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/product.jpg" alt="#">
 													</a>
 													<div class="button-head">
 														<div class="product-action">
@@ -492,7 +490,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+								<a title="Add to cart"  onclick="cardfunc()"  >Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -508,8 +506,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product1.jpg" alt="#">
+														<img class="default-img" src="images/product/product1.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product1.jpg"
 															alt="#">
 													</a>
@@ -521,12 +519,12 @@
 															<a title="Wishlist" href="#"><i
 																	class=" ti-heart "></i><span>Add to
 																	Wishlist</span></a>
-															<a title="Compare" href="#"><i
+															<a title="Compare" onclick="cardfunc()"><i
 																	class="ti-bar-chart-alt"></i><span>Add to
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart"  onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -542,8 +540,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product2.jpg" alt="#">
+														<img class="default-img" src="images/product/product2.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product2.jpg"
 															alt="#">
 													</a>
@@ -555,12 +553,12 @@
 															<a title="Wishlist" href="#"><i
 																	class=" ti-heart "></i><span>Add to
 																	Wishlist</span></a>
-															<a title="Compare" href="#"><i
+															<a title="Compare" onclick="cardfunc()"><i
 																	class="ti-bar-chart-alt"></i><span>Add to
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -576,8 +574,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product4.jpg" alt="#">
+														<img class="default-img" src="images/product/product4.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product4.jpg"
 															alt="#">
 														<span class="new">New</span>
@@ -595,7 +593,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -611,8 +609,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product5.jpg" alt="#">
+														<img class="default-img" src="images/product/product5.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product5.jpg"
 															alt="#">
 													</a>
@@ -629,7 +627,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -645,8 +643,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 														<span class="price-dec">30% Off</span>
@@ -664,7 +662,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -680,8 +678,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product1.jpg" alt="#">
+														<img class="default-img" src="images/product/product1.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product1.jpg"
 															alt="#">
 													</a>
@@ -698,7 +696,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -714,8 +712,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product8.jpg" alt="#">
+														<img class="default-img" src="images/product/product8.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product8.jpg"
 															alt="#">
 														<span class="out-of-stock">Hot</span>
@@ -733,7 +731,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -759,8 +757,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product7.jpg" alt="#">
+														<img class="default-img" src="images/product/product7.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product7.jpg"
 															alt="#">
 													</a>
@@ -777,7 +775,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -793,8 +791,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product2.jpg" alt="#">
+														<img class="default-img" src="images/product/product2.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product2.jpg"
 															alt="#">
 													</a>
@@ -811,7 +809,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -827,8 +825,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product3.jpg" alt="#">
+														<img class="default-img" src="images/product/product3.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product3.jpg"
 															alt="#">
 													</a>
@@ -845,7 +843,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -861,10 +859,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product4.jpg" alt="#">
-														<img class="hover-img" src="images/product/doctor.jpg"
+														<img class="default-img" src="images/product/product4.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/doctor.jpg" alt="#">
 														<span class="new">New</span>
 													</a>
 													<div class="button-head">
@@ -880,7 +877,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -896,8 +893,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product8.jpg" alt="#">
+														<img class="default-img" src="images/product/product8.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product8.jpg"
 															alt="#">
 													</a>
@@ -914,7 +911,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -930,8 +927,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product5.jpg" alt="#">
+														<img class="default-img" src="images/product/product5.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product5.jpg"
 															alt="#">
 														<span class="price-dec">30% Off</span>
@@ -949,7 +946,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -965,8 +962,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product7.jpg" alt="#">
+														<img class="default-img" src="images/product/product7.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product7.jpg"
 															alt="#">
 													</a>
@@ -983,7 +980,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -999,8 +996,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 														<span class="out-of-stock">Hot</span>
@@ -1013,7 +1010,7 @@
 															<a title="Wishlist" href="#"><i
 																	class=" ti-heart "></i><span>Add to
 																	Wishlist</span></a>
-															<a title="Compare" href="#"><i
+															<a title="Compare" onclick="cardfunc()"><i
 																	class="ti-bar-chart-alt"></i><span>Add to
 																	Compare</span></a>
 														</div>
@@ -1044,10 +1041,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product.jpg" alt="#">
-														<img class="hover-img" src="images/product/product.jpg"
+														<img class="default-img" src="images/product/product.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/product.jpg" alt="#">
 													</a>
 													<div class="button-head">
 														<div class="product-action">
@@ -1062,7 +1058,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1078,8 +1074,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product2.jpg" alt="#">
+														<img class="default-img" src="images/product/product2.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product2.jpg"
 															alt="#">
 													</a>
@@ -1096,7 +1092,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1112,8 +1108,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product3.jpg" alt="#">
+														<img class="default-img" src="images/product/product3.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product3.jpg"
 															alt="#">
 													</a>
@@ -1130,7 +1126,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1146,10 +1142,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product4.jpg" alt="#">
-														<img class="hover-img" src="images/product/doctor.jpg"
+														<img class="default-img" src="images/product/product4.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/doctor.jpg" alt="#">
 														<span class="new">New</span>
 													</a>
 													<div class="button-head">
@@ -1181,8 +1176,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product8.jpg" alt="#">
+														<img class="default-img" src="images/product/product8.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product8.jpg"
 															alt="#">
 													</a>
@@ -1199,7 +1194,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1215,8 +1210,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product5.jpg" alt="#">
+														<img class="default-img" src="images/product/product5.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product5.jpg"
 															alt="#">
 														<span class="price-dec">30% Off</span>
@@ -1234,7 +1229,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1250,8 +1245,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product7.jpg" alt="#">
+														<img class="default-img" src="images/product/product7.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product7.jpg"
 															alt="#">
 													</a>
@@ -1268,7 +1263,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1284,8 +1279,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 														<span class="out-of-stock">Hot</span>
@@ -1303,7 +1298,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1329,8 +1324,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product3.jpg" alt="#">
+														<img class="default-img" src="images/product/product3.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product3.jpg"
 															alt="#">
 													</a>
@@ -1363,8 +1358,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product2.jpg" alt="#">
+														<img class="default-img" src="images/product/product2.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product2.jpg"
 															alt="#">
 													</a>
@@ -1381,7 +1376,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1397,10 +1392,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product.jpg" alt="#">
-														<img class="hover-img" src="images/product/product.jpg"
+														<img class="default-img" src="images/product/product.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/product.jpg" alt="#">
 													</a>
 													<div class="button-head">
 														<div class="product-action">
@@ -1415,7 +1409,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1431,10 +1425,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product4.jpg" alt="#">
-														<img class="hover-img" src="images/product/doctor.jpg"
+														<img class="default-img" src="images/product/product4.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/doctor.jpg" alt="#">
 														<span class="new">New</span>
 													</a>
 													<div class="button-head">
@@ -1450,7 +1443,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1466,8 +1459,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product8.jpg" alt="#">
+														<img class="default-img" src="images/product/product8.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product8.jpg"
 															alt="#">
 													</a>
@@ -1484,7 +1477,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1500,8 +1493,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product5.jpg" alt="#">
+														<img class="default-img" src="images/product/product5.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product5.jpg"
 															alt="#">
 														<span class="price-dec">30% Off</span>
@@ -1519,7 +1512,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1535,8 +1528,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product7.jpg" alt="#">
+														<img class="default-img" src="images/product/product7.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product7.jpg"
 															alt="#">
 													</a>
@@ -1553,7 +1546,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1569,8 +1562,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 														<span class="out-of-stock">Hot</span>
@@ -1588,7 +1581,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1614,10 +1607,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product.jpg" alt="#">
-														<img class="hover-img" src="images/product/product.jpg"
+														<img class="default-img" src="images/product/product.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/product.jpg" alt="#">
 													</a>
 													<div class="button-head">
 														<div class="product-action">
@@ -1632,7 +1624,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1648,8 +1640,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product2.jpg" alt="#">
+														<img class="default-img" src="images/product/product2.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product2.jpg"
 															alt="#">
 													</a>
@@ -1666,7 +1658,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1682,8 +1674,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product3.jpg" alt="#">
+														<img class="default-img" src="images/product/product3.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product3.jpg"
 															alt="#">
 													</a>
@@ -1700,7 +1692,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1716,10 +1708,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product4.jpg" alt="#">
-														<img class="hover-img" src="images/product/doctor.jpg"
+														<img class="default-img" src="images/product/product4.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/doctor.jpg" alt="#">
 														<span class="new">New</span>
 													</a>
 													<div class="button-head">
@@ -1735,7 +1726,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1751,8 +1742,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product8.jpg" alt="#">
+														<img class="default-img" src="images/product/product8.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product8.jpg"
 															alt="#">
 													</a>
@@ -1769,7 +1760,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1785,8 +1776,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product5.jpg" alt="#">
+														<img class="default-img" src="images/product/product5.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product5.jpg"
 															alt="#">
 														<span class="price-dec">30% Off</span>
@@ -1804,7 +1795,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1820,8 +1811,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product7.jpg" alt="#">
+														<img class="default-img" src="images/product/product7.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product7.jpg"
 															alt="#">
 													</a>
@@ -1838,7 +1829,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1854,8 +1845,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 														<span class="out-of-stock">Hot</span>
@@ -1873,7 +1864,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1899,8 +1890,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 													</a>
@@ -1917,7 +1908,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1933,8 +1924,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 													</a>
@@ -1951,7 +1942,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -1967,8 +1958,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 													</a>
@@ -1985,7 +1976,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -2001,8 +1992,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 														<span class="new">New</span>
@@ -2020,7 +2011,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -2036,8 +2027,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 													</a>
@@ -2070,8 +2061,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 														<span class="price-dec">30% Off</span>
@@ -2089,7 +2080,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -2105,8 +2096,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
 														<img class="hover-img" src="images/product/product6.jpg"
 															alt="#">
 													</a>
@@ -2123,7 +2114,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -2139,10 +2130,9 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img class="default-img"
-															src="images/product/product6.jpg" alt="#">
-														<img class="hover-img" src="images/product/doctor.jpg"
+														<img class="default-img" src="images/product/product6.jpg"
 															alt="#">
+														<img class="hover-img" src="images/product/doctor.jpg" alt="#">
 														<span class="out-of-stock">Hot</span>
 													</a>
 													<div class="button-head">
@@ -2158,7 +2148,7 @@
 																	Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -2176,575 +2166,571 @@
 							</div>
 							<!--/ End Single Tab -->
 
-								<!-- Start Single Tab -->
-								<div class="tab-pane fade" id="herbal" role="tabpanel">
-									<div class="tab-single">
-										<div class="row">
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product3.jpg" alt="#">
-															<img class="hover-img" src="images/product/product3.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+							<!-- Start Single Tab -->
+							<div class="tab-pane fade" id="herbal" role="tabpanel">
+								<div class="tab-single">
+									<div class="row">
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product3.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product3.jpg"
+															alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-1</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product2.jpg" alt="#">
-															<img class="hover-img" src="images/product/product2.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-2</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
-														</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-1</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product.jpg" alt="#">
-															<img class="hover-img" src="images/product/product.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product2.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product2.jpg"
+															alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-2</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product4.jpg" alt="#">
-															<img class="hover-img" src="images/product/doctor.jpg"
-																alt="#">
-															<span class="new">New</span>
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html"> Medicine-4</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
-														</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-2</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product8.jpg" alt="#">
-															<img class="hover-img" src="images/product/product8.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product.jpg" alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-5</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product5.jpg" alt="#">
-															<img class="hover-img" src="images/product/product5.jpg"
-																alt="#">
-															<span class="price-dec">30% Off</span>
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-6</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
-														</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-2</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product7.jpg" alt="#">
-															<img class="hover-img" src="images/product/product7.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product4.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/doctor.jpg" alt="#">
+														<span class="new">New</span>
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-7</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html"> Medicine-4</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
+													</div>
+												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product6.jpg" alt="#">
-															<img class="hover-img" src="images/product/product6.jpg"
-																alt="#">
-															<span class="out-of-stock">Hot</span>
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product8.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product8.jpg"
+															alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
+														</div>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-8</a></h3>
-														<div class="product-price">
-															<span class="old">BDT-260.00</span>
-															<span>BDT-250.00</span>
+												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-5</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product5.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product5.jpg"
+															alt="#">
+														<span class="price-dec">30% Off</span>
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-6</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product7.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product7.jpg"
+															alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
+														</div>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-7</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product6.jpg"
+															alt="#">
+														<span class="out-of-stock">Hot</span>
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
+														</div>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-8</a></h3>
+													<div class="product-price">
+														<span class="old">BDT-260.00</span>
+														<span>BDT-250.00</span>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--/ End Single Tab -->
+							</div>
+							<!--/ End Single Tab -->
 
-								<!-- Start Single Tab -->
-								<div class="tab-pane fade" id="others" role="tabpanel">
-									<div class="tab-single">
-										<div class="row">
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product3.jpg" alt="#">
-															<img class="hover-img" src="images/product/product3.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+							<!-- Start Single Tab -->
+							<div class="tab-pane fade" id="others" role="tabpanel">
+								<div class="tab-single">
+									<div class="row">
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product3.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product3.jpg"
+															alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-1</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product2.jpg" alt="#">
-															<img class="hover-img" src="images/product/product2.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-2</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
-														</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-1</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product.jpg" alt="#">
-															<img class="hover-img" src="images/product/product.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product2.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product2.jpg"
+															alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-2</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product4.jpg" alt="#">
-															<img class="hover-img" src="images/product/doctor.jpg"
-																alt="#">
-															<span class="new">New</span>
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html"> Medicine-4</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
-														</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-2</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product8.jpg" alt="#">
-															<img class="hover-img" src="images/product/product8.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product.jpg" alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-5</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product5.jpg" alt="#">
-															<img class="hover-img" src="images/product/product5.jpg"
-																alt="#">
-															<span class="price-dec">30% Off</span>
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-6</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
-														</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-2</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product7.jpg" alt="#">
-															<img class="hover-img" src="images/product/product7.jpg"
-																alt="#">
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product4.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/doctor.jpg" alt="#">
+														<span class="new">New</span>
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-7</a></h3>
-														<div class="product-price">
-															<span>BDT-290.00</span>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
 												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html"> Medicine-4</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
+													</div>
+												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img"
-																src="images/product/product6.jpg" alt="#">
-															<img class="hover-img" src="images/product/product6.jpg"
-																alt="#">
-															<span class="out-of-stock">Hot</span>
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal"
-																	title="Quick View" href="#"><i
-																		class=" ti-eye"></i><span>Quick Shop</span></a>
-																<a title="Wishlist" href="#"><i
-																		class=" ti-heart "></i><span>Add to
-																		Wishlist</span></a>
-																<a title="Compare" href="#"><i
-																		class="ti-bar-chart-alt"></i><span>Add to
-																		Compare</span></a>
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Add to cart</a>
-															</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product8.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product8.jpg"
+															alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
+														</div>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
 														</div>
 													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Medicine-8</a></h3>
-														<div class="product-price">
-															<span class="old">BDT-260.00</span>
-															<span>BDT-250.00</span>
+												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-5</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product5.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product5.jpg"
+															alt="#">
+														<span class="price-dec">30% Off</span>
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
 														</div>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-6</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product7.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product7.jpg"
+															alt="#">
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
+														</div>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-7</a></h3>
+													<div class="product-price">
+														<span>BDT-290.00</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														<img class="default-img" src="images/product/product6.jpg"
+															alt="#">
+														<img class="hover-img" src="images/product/product6.jpg"
+															alt="#">
+														<span class="out-of-stock">Hot</span>
+													</a>
+													<div class="button-head">
+														<div class="product-action">
+															<a data-toggle="modal" data-target="#exampleModal"
+																title="Quick View" href="#"><i
+																	class=" ti-eye"></i><span>Quick Shop</span></a>
+															<a title="Wishlist" href="#"><i
+																	class=" ti-heart "></i><span>Add to
+																	Wishlist</span></a>
+															<a title="Compare" href="#"><i
+																	class="ti-bar-chart-alt"></i><span>Add to
+																	Compare</span></a>
+														</div>
+														<div class="product-action-2">
+															<a title="Add to cart" onclick="cardfunc()">Add to cart</a>
+														</div>
+													</div>
+												</div>
+												<div class="product-content">
+													<h3><a href="product-details.html">Medicine-8</a></h3>
+													<div class="product-price">
+														<span class="old">BDT-260.00</span>
+														<span>BDT-250.00</span>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!--/ End Single Tab -->
+							</div>
+							<!--/ End Single Tab -->
 						</div>
 					</div>
 				</div>
@@ -2762,7 +2748,7 @@
 					<div class="single-banner">
 						<img src="images/product/n95-1.jpg" alt="#">
 						<div class="content">
-							 
+
 							<h3> <i>Big Sale </i><br> <i>Up to 50% </i></h3>
 							<a href="#">Shop Now</a>
 						</div>
@@ -2774,8 +2760,8 @@
 					<div class="single-banner">
 						<img src="images/product/dettol.jpg" alt="#">
 						<div class="content">
-							 
-							<h3> <i> Big Sale </i><br> <i> up to  70% </i></h3>
+
+							<h3> <i> Big Sale </i><br> <i> up to 70% </i></h3>
 							<a href="#" class="btn">Shop Now</a>
 						</div>
 					</div>
@@ -3273,7 +3259,7 @@
 	</section>
 	<!-- End Shop Newsletter -->
 
-	
+
 
 	<!-- Start Footer Area -->
 	<footer class="footer">
@@ -3356,8 +3342,8 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p> Copyright © 2021 <a href="#"
-										target="_blank"> NEXTGEN Innovation Ltd. </a> - All Rights Reserved.</p>
+								<p> Copyright © 2021 <a href="#" target="_blank"> NEXTGEN Innovation Ltd. </a> - All
+									Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
@@ -3371,7 +3357,8 @@
 		</div>
 	</footer>
 	<!-- /End Footer Area -->
-
+    <!---ScriptFile-->
+	<script src="js/main.js"></script>
 	<!-- Jquery -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.0.js"></script>
