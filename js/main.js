@@ -1,4 +1,4 @@
-const cardfunc=()=>{
+const cartfunc=()=>{
     alert("Product add in carts");
 }
 
