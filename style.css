@@ -5119,3 +5119,18 @@ login ================ */
 	text-align:center;
 	 
 }
+/* my account */
+
+.myaccount{
+	width: 50%;
+	margin: auto;
+    padding: 50px;
+}
+
+.myaccountimg img {
+	width: 150px;
+	border-radius: 50%;
+	margin-left: 40%;
+	 
+	
+}
