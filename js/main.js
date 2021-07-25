@@ -1,5 +1,5 @@
 const cartfunc=()=>{
-    alert("Product add in carts");
+    alert("Product added in carts");
 }
 
 const checkfunc=()=>{

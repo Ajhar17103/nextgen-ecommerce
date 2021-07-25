@@ -1163,7 +1163,7 @@ Version:1.0
 	visibility:visible;
 }
 .header.sticky .header-inner .nav li a {
-	color: #333;
+	color: rgb(250, 250, 250);
 }
 .sticky{
 	color: black;
@@ -1193,7 +1193,7 @@ Version:1.0
 	position:fixed;
 	top:0;
 	left:0;
-	background:#fff;
+	background:rgb(15, 138, 70);;
 	animation: fadeInDown 1s both 0.2s;
 	-webkit-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -2039,6 +2039,11 @@ Version:1.0
 ========================================*/
 .shop-sidebar .single-widget {
 	margin-top: 30px;
+	background: #F6F7FB;
+	padding: 30px;
+}
+.my-widget {
+ 
 	background: #F6F7FB;
 	padding: 30px;
 }
@@ -2900,7 +2905,7 @@ Version:1.0
 	font-size: 14px;
 	font-weight: 600;
 }
-.shop-home-list .single-list .content .titlea {
+.shop-home-list .single-list .content .title a {
 	color: #333;
 }
 .shop-home-list .single-list .content a:hover{
